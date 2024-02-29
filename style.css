@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3f5f8;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    z-index: 111;
+    /* background-color: red; */
+    line-height: 80px;
+
+}
+
+.logo {
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+
+}
+
+span {
+    /* font-size: 70px; */
+    color: #7f00ff;
+
+}
+
+.navitems {
+
+    display: flex;
+
+
+}
+
+.navitems li {
+    list-style: none;
+    margin: 0 15px;
+
+
+}
+
+.navitems li a {
+    font-size: 25px;
+    color: #3d535f;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+
+}
+
+.navitems li:hover a,
+.links a:hover {
+    color: #7f00ff;
+
+}
+
+.links a {
+    font-size: 30px;
+    color: #3d535f;
+    margin: 25px 10px;
+
+
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+
+}
+
+.wrapper::before {
+    position: absolute;
+    content: '';
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: object1 6s linear infinite;
+}
+
+.wrapper::after {
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: object2 6s linear infinite;
+}
+
+@keyframes object1 {
+    50% {
+        left: -13%;
+        top: 41%;
+    }
+}
+
+@keyframes object2 {
+    50% {
+        left: 35%;
+        top: 10%;
+    }
+}
+
+.cols {
+    width: 50%;
+    /* margin-top: -1300px; */
+
+}
+
+.cols0 {
+    width: 60%;
+    z-index: 5;
+}
+
+.topline {
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #3d535f;
+}
+
+.topline::after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #7f00ff;
+}
+
+h1 {
+    display: block;
+    font-size: 7em;
+    font-weight: 900;
+    color: #3d535f;
+
+}
+
+.multitext {
+    color: #7f00ff;
+    text-transform: capitalize;
+
+}
+
+p {
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #3d535f;
+}
+
+.btns {
+    width: 100%;
+    position: relative;
+    left: 150px;
+
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #3d535f;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+button:hover {
+    background-color: #7f00ff;
+}
+
+.imgbox {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.imgbox .aniket {
+    position: absolute;
+    /* height: 100%; */
+    /* width: calc(130% - 80px); */
+    top: 14%;
+    right: -138px;
+    transform: rotateY(180deg);
+    /* animation: animateUser 2s linear infinite; */
+    /* position: absolute; */
+    width: 110%;
+    filter: saturate(150%);
+}
+
+@keyframes animateUser {
+    50% {
+        /* right: 30px; */
+        top: -53%;/
+    }
+}
+
+.imgbox #splash {
+    position: absolute;
+    /* top: 55%; */
+    /* left: 50%; */
+    transform: tran margin(-50% -50%) rotate(-35deg);
+    width: 16 023 0%;
+    filter: saturate(400%);
+    /* animation: animate 4s linear infinite; */
+    width: 130%;
+}
+
+@keyframes animate {
+    50% {
+        top: 49%;
+        left: 51%;
+        width: 155%;
+
+    }
+}
+@media only screen and (max-width: 768px) {
+    .wrapper{
+        padding: 0 5%;
+    }
+
+    .cols, .cols0{
+        width: 100%;
+    }
+
+    .btns{
+        left: 0;
+    }
+
+    .imgbox .aniket {
+        right: -20%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo {
+        font-size: 30px;
+    }
+
+    .navitems li a {
+        font-size: 20px;
+    }
+
+    .links a {
+        font-size: 25px;
+    }
+
+    .topline {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+
+    .imgbox .aniket {
+        right: -30%;
+    }
+}
+.humberger{
+    width: 20px;
+    height: 30px;
+    /* background-color: black; */
+    margin-top: 20px;
+
+    
+}
+.lines{
+width: 28px;
+height: 2px;
+background-color: #7f00ff;
+margin: 5PX 0;
+}
+.mobile_menu{
+    display: none;
+}
+
+.humberger{
+    flex-direction: column;
+    gap: 3px;
+    margin-right: 20px;
+    display: none;
+}
+
+.humberger span{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    cursor: pointer;
+}
+.mobile_menu{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(188, 178, 178);
+    top: 30px;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    display: none;
+    
+    
+}
+@media (max-width: 600px) {
+    .hamburger{
+        display: flex;
+    }
+    
+    }
+
+
+
+    

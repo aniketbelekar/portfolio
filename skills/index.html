@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            padding: 50px;
+        }
+
+        .skills-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px;
+            background: linear-gradient(45deg, #7f00ff, pink);
+            border-radius: 10px;
+            box-shadow: 1px 0 17px rgb(125, 77, 77);
+        }
+
+        .skills-section h2 {
+            font-size: 2.5em;
+            color: #3d535f;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .skill-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .skill-bar {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 5px;
+            height: 20px;
+        }
+
+        .skill-level {
+            height: 100%;
+            background-color: #7f00ff;
+            border-radius: 5px;
+        }
+
+        .skill-level[data-level="beginner"] {
+            width: 30%;
+        }
+
+        .skill-level[data-level="intermediate"] {
+            width: 60%;
+        }
+
+        .skill-level[data-level="advanced"] {
+            width: 90%;
+        }
+
+        .skill-level[data-level="expert"] {
+            width: 100%;
+        }
+
+
+
+        
+    
+        
+        .wrapper::before {
+            position: absolute;
+            content: '';
+            height: 600px;
+            width: 600px;
+            border-radius: 50%;
+            left: -12%;
+            top: 43%;
+            background: linear-gradient(45deg, #7f00ff, pink);
+            animation: object1 6s linear infinite;
+        }
+        
+        .wrapper::after {
+            position: absolute;
+            content: '';
+            height: 210px;
+            width: 200px;
+            border-radius: 50%;
+            left: 85%;
+            top: 12%;
+            background: linear-gradient(45deg, #7f00ff, pink);
+            animation: object2 6s linear infinite;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+                <div class="skill-level" data-level="expert"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+                <div class="skill-level" data-level="advanced"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar">
+                <div class="skill-level" data-level="intermediate"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">UI/UX Design</div>
+            <div class="skill-bar">
+                <div class="skill-level" data-level="advanced"></div>
+            </div>
+        </div>
+        <div class="wrapper">
+
+        </div>
+        <!-- Add more skills as needed -->
+    </div>
+</body>
+</html>

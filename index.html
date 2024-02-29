@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">portfolio<span>.</span></div>
+            <ul class="navitems">
+                <li><a href="">home</a></li>
+                <li><a href="/About/">About</a></li>
+                <li><a href="/skills/">skills</a></li>
+                <li><a href="/my projects/">Projects </a></li>
+            </ul>
+            <div class="links">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+
+            </div>
+            <div class="humberger">
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+            </div>
+            <div class="mobile_menu" id="mobile">
+                <div>Home</div>
+                <div>About</div>
+                <div>Skills</div>
+                <div>Blogs</div>
+            </div>
+        </nav>
+
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Hello</span>
+                <h1>I'm <span class="multitext"></span></h1>
+                <p>"Passionate Front End Developer skilled in crafting captivating user interfaces and seamless user experiences, with expertise in HTML, CSS, JavaScript, and UI/UX principles, committed to delivering innovative web solutions that blend creativity and functionality seamlessly."</p>
+
+                <div class="btns">
+                    <button>download cv </button>
+                    <button>Hire me</button>
+                </div>
+            </div>
+            <div class="cols cols1">
+                <div class="imgbox">
+                    <img src="/image.jpg" id="splash">
+                    <img class="aniket" src="/Screenshot_2024-02-29_125530-removebg-preview.png">
+
+                </div>
+
+            </div>
+        </div>
+
+     
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typingEffect = new Typed(".multitext",{
+            strings : ['Aniket Belekar','coder','ui-ux desiginer','youtuber'],
+            loop : true,
+            typeSpeed:100,
+            backSpeed:80,
+            backDelay:1500
+        })
+    </script>
+</body>
+
+</html>

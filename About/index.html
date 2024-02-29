@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-color: #f3f5f8;
+            padding: 50px;
+        }
+
+        .about-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px;
+            background: linear-gradient(45deg, #7f00ff, pink);;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section h2 {
+            font-size: 3.5em;
+            color: #3d535f;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 1.5em;
+            color: black;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .wrapper {
+            display: flex;
+            width: 100%;
+            height: calc(100vh - 80px);
+            justify-content: center;
+            align-items: center;
+            padding: 0 10%;
+            overflow: hidden;
+        
+        }
+        
+        .wrapper::before {
+            position: absolute;
+            content: '';
+            height: 600px;
+            width: 600px;
+            border-radius: 50%;
+            left: -12%;
+            top: 43%;
+            background: linear-gradient(45deg, #7f00ff, pink);
+            animation: object1 6s linear infinite;
+        }
+        
+        .wrapper::after {
+            position: absolute;
+            content: '';
+            height: 210px;
+            width: 200px;
+            border-radius: 50%;
+            left: 85%;
+            top: 12%;
+            background: linear-gradient(45deg, #7f00ff, pink);
+            animation: object2 6s linear infinite;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="about-section">
+        <h2>About Me</h2>
+        <p>I am a passionate Front End Developer with a strong focus on crafting captivating user interfaces and seamless user experiences. My expertise lies in HTML, CSS, JavaScript, and UI/UX principles. I am committed to delivering innovative web solutions that blend creativity and functionality seamlessly.</p>
+        <p>Feel free to explore my portfolio and get in touch with me for any inquiries or collaboration opportunities.</p>
+    </div>
+    <div class="wrapper">
+
+    </div>
+</body>
+</html>
